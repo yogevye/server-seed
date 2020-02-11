@@ -1,43 +1,41 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
 
-# compiled output
-/dist
-/tmp
-/out-tsc
+pids
+logs
+results
+tmp
 
-# dependencies
-/node_modules
+# Build
+public/css/main.css
 
-# profiling files
-chrome-profiler-events.json
-speed-measure-plugin.json
+# Coverage reports
+coverage
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# API keys and secrets
+.env
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Dependency directory
+node_modules
+bower_components
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
+# Editors
+.idea
+*.iml
 
-# System Files
+# OS metadata
 .DS_Store
 Thumbs.db
+
+# Ignore built ts files
+dist/**/*
+
+# ignore yarn.lock
+yarn.lock
